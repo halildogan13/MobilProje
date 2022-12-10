@@ -13,7 +13,7 @@ class GameAdapter(val gameList: ArrayList<Game>) : RecyclerView.Adapter<GameAdap
     class GameHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         val gameImage : AppCompatImageView = itemView.findViewById(R.id.imageView)
         val gameName : TextView = itemView.findViewById(R.id.textView)
-        val metacritic : TextView = itemView.findViewById(R.id.textView)
+        val metacritic : TextView = itemView.findViewById(R.id.textView2)
         val gameType : TextView = itemView.findViewById(R.id.textView3)
     }
 
