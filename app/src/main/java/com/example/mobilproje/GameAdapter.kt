@@ -1,5 +1,6 @@
 package com.example.mobilproje
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -20,6 +21,8 @@ class GameAdapter(val gameList: ArrayList<Game>) : RecyclerView.Adapter<GameAdap
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GameHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.game_row,parent,false)
         return GameHolder(itemView)
+
+
     }
 
     override fun onBindViewHolder(holder: GameHolder, position: Int) {
@@ -29,7 +32,18 @@ class GameAdapter(val gameList: ArrayList<Game>) : RecyclerView.Adapter<GameAdap
         holder.metacritic.text = currentGame.metacriticPoint
         holder.gameType.text = currentGame.gameType
 
+        holder.itemView.setOnClickListener {
+            val intent = Intent(holder.itemView.context,DetailsActivity::class.java)
+            holder.itemView.context.startActivity(intent)
+            intent.putExtra("gameName",gameList.get(position).name)
+            intent.putExtra("gameImage",gameList.get(position).gameImage)
+            holder.itemView.context.startActivity(intent)
+        }
+
+
+
     }
+
 
     override fun getItemCount(): Int {
         return gameList.size

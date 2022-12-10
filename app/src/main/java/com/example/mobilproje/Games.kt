@@ -17,10 +17,12 @@ class Games : Fragment() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var gameList: ArrayList<Game>
 
+
     lateinit var gameImageIds : ArrayList<Int>
     lateinit var gameNames: ArrayList<String>
     lateinit var metacriticPoints: ArrayList<String>
     lateinit var gameTypes: ArrayList<String>
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,6 +45,7 @@ class Games : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+
         return inflater.inflate(R.layout.games, container, false)
     }
 
@@ -50,17 +53,22 @@ class Games : Fragment() {
         gameList = arrayListOf<Game>()
 
         gameImageIds = arrayListOf(
-            R.drawable.gtav
+            R.drawable.gtav,
+            R.drawable.witcher3
         )
 
         gameNames = arrayListOf(
-            getString(R.string.gamename_1)
+            getString(R.string.gamename_1),
+            getString(R.string.gamename_2)
+
         )
         gameTypes = arrayListOf(
-            getString(R.string.gametype_1)
+            getString(R.string.gametype_1),
+            getString(R.string.gametype_2)
         )
         metacriticPoints = arrayListOf(
-            getString(R.string.mtpoint_1)
+            getString(R.string.mtpoint_1),
+            getString(R.string.mtpoint_2)
         )
 
         for (i in gameImageIds.indices){

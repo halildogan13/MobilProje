@@ -8,10 +8,13 @@
     <string name="todo">TODO</string>
 
     <string name="gamename_1">Grand Theft Auto V</string>
+    <string name="gamename_2">Witcher 3</string>
 
     <string name="mtpoint_1">96</string>
+    <string name="mtpoint_2">92</string>
 
     <string name="gametype_1">Action</string>
+    <string name="gametype_2">Action</string>
 
 
     <string name="games">Games</string>
