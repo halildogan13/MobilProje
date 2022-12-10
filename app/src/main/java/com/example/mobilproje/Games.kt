@@ -17,6 +17,7 @@ class Games : Fragment() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var gameList: ArrayList<Game>
 
+
     lateinit var gameImageIds : ArrayList<Int>
     lateinit var gameNames: ArrayList<String>
     lateinit var metacriticPoints: ArrayList<String>
