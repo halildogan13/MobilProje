@@ -20,11 +20,11 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="282dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="80dp"
-        android:text="açıklama......."
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:text="Game Description"
         android:textSize="36dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />

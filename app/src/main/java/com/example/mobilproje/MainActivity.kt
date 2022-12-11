@@ -10,17 +10,9 @@ import com.example.mobilproje.databinding.GameRowBinding
 
 class MainActivity : AppCompatActivity() {
 
-    //private lateinit var binding: GameRowBinding
-    //private lateinit var gameList: ArrayList<Game>
-
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-
-
 
         // Get the FragmentManager and start a transaction.
         val fragmentManager = supportFragmentManager
@@ -33,14 +25,7 @@ class MainActivity : AppCompatActivity() {
         // Commit the transaction.
         fragmentTransaction.commit()
 
-        /*
-        gameList = ArrayList<Game>()
 
-        val game = Game("GTA V", "96", "Action")
-        gameList.add(game)
-
-        val gameAdapter = GameAdapter(gameList)
-        binding*/
 
 
     }
